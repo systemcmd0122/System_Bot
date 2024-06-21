@@ -1,0 +1,166 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background-color: black;
+}
+
+.icon{
+  color: aliceblue;
+  font-size: 20px;
+}
+
+.icon {
+    display: flex;
+    align-items: center;  /* 垂直方向の中央揃え */
+    justify-content: center;  /* 水平方向の中央揃え */
+    height: 15vh;  /* ビューポート全体の高さ */
+    width: 50vh;
+    text-align: center;
+    font-weight: bold;  /* テキストを太字にする */
+
+  }
+  
+.icon img {
+  border-radius: 50%;  /* 画像を円形にする */
+  transition: transform 0.3s ease-in-out;  /* トランスフォームのトランジションを設定 */
+}
+
+.icon img:hover {
+  transform: scale(1.2) rotate(360deg);  /* 画像を回転拡大 */
+}
+
+.text {
+  font-size: 1.5rem;  /* テキストのフォントサイズ */
+}
+
+.title{
+  font-size: 50px;
+  color: aliceblue;
+  text-align: center;
+  font-weight: bold;  /* テキストを太字にする */
+  white-space: pre-line; /* 改行を維持する */
+}
+
+.description{
+  font-size: 20px;
+  color: rgb(148, 148, 148);
+  text-align: center;
+  white-space: pre-line;
+  font-weight: bold;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+.btn,
+a.btn,
+button.btn {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+}
+
+a.btn-flat {
+  overflow: hidden;
+  padding: 1.5rem 6rem;
+  color: #fff;
+  border-radius: 0;
+  border: 2px solid #fff; /* 白い枠を追加 */
+  background: #000;
+  position: absolute; /* 位置を絶対指定 */
+  top: 50%; /* 親要素の中央に配置 */
+  left: 50%; /* 親要素の中央に配置 */
+  transform: translate(-50%, 200%); /* 中央に正確に配置するために使用 */
+}
+
+a.btn-flat span {
+  position: relative;
+}
+
+a.btn-flat:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150%;
+  height: 500%;
+  content: "";
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+  transform: translateX(-98%) translateY(-25%) rotate(45deg);
+  background: #00b7ee;
+}
+
+a.btn-flat:hover:before {
+  -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  transform: translateX(-9%) translateY(-25%) rotate(45deg);
+}
+
+.test{
+  font-size: 20px;
+  color: rgb(0, 255, 157);
+  text-align: center;
+  font-weight: bold;  /* テキストを太字にする */
+  white-space: pre-line; /* 改行を維持する */
+  position: absolute; /* 位置を絶対指定 */
+  top: 50%; /* 親要素の中央に配置 */
+  left: 50%; /* 親要素の中央に配置 */
+  transform: translate(-50%, 400%); /* 中央に正確に配置するために使用 */
+
+}
+
+.spase{
+  font-size: 30px;
+  color: black;
+  text-align: center;
+  white-space: pre-line; /* 改行を維持する */
+  position: absolute; /* 位置を絶対指定 */
+  top: 50%; /* 親要素の中央に配置 */
+  left: 50%; /* 親要素の中央に配置 */
+  transform: translate(-50%, 600%); /* 中央に正確に配置するために使用 */
+
+}
+
+.copyright{
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  white-space: pre-line; /* 改行を維持する */
+  position: absolute; /* 位置を絶対指定 */
+  top: 50%; /* 親要素の中央に配置 */
+  left: 50%; /* 親要素の中央に配置 */
+  transform: translate(-50%, 2000%); /* 中央に正確に配置するために使用 */
+
+}
+
+span {
+  text-decoration: underline;
+}
