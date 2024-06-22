@@ -5,7 +5,7 @@ export default function Home() {
     <main>
       {/* ホーム 上記のアイコン */}
       <div className="icon">
-        <Image src="/images/bot.png" alt="Sample Image" width={70} height={70} />
+        <Image src="/images/Systm_bot.png" alt="Sample Image" width={70} height={70} />
         &nbsp;&nbsp;System Bot
       </div>
       {/* ボット追加ボタン */}
