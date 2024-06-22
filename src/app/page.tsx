@@ -10,7 +10,7 @@ export default function Home() {
       </div>
       {/* ボット追加ボタン */}
       <a
-        href="https://discord.com/oauth2/authorize?client_id=1213746540670095400"
+        href="https://discord.com/oauth2/authorize?client_id=1254212405668614259&permissions=8&integration_type=0&scope=bot"
         target="_blank"
         className="btn btn-flat position"
       >
